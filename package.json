@@ -1,0 +1,22 @@
+{
+  "name": "postgres-todo-list",
+  "version": "1.0.0",
+  "description": "Simple to-do list with PostgreSQL",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "PostgreSQL",
+    "ExpressJS",
+    "EJS"
+  ],
+  "author": "Victor Contreras",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "pg": "^8.11.3"
+  }
+}
