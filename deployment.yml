@@ -16,7 +16,7 @@ spec:
       - name: nodejs-app
         image: titiacr.titiacr.azurecr.io/azure-aks:latest
         ports:
-        - containerPort: 3000
+        - containerPort: 8080
         env:
         - name: DATABASE_USER
           valueFrom:
