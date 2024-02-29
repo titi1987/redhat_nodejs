@@ -1,1 +1,29 @@
+name: Deploy to AKS
 
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3 # Updated to v3
+    
+    - name: Azure Login
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    
+    - name: Set up kubectl
+      uses: azure/setup-kubectl@v1
+      with:
+        version: '1.21.0' # Example: Specify a fixed version known to be compatible
+
+    - name: Deploy to AKS
+      run: |
+        kubectl apply -f deployment.yml -f service.yml
+        # Optionally add commands to verify the deployment or set context/namespace if needed
