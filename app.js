@@ -8,7 +8,7 @@ const { Pool } = require('pg'); // Import the Pool class from the pg module
 
 const pool = new Pool({
   user: 'postgres',
-  host: 'titi-postgres-server.postgres.database.azure.com', // Instead of 'localhost'
+  host: 'nodejs-postgres2.postgres.database.azure.com', // Instead of 'localhost'
   database: 'todo',
   password: 'Reborn1987',
   port: 5432,
