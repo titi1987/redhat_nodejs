@@ -2,6 +2,19 @@
 
 This guide outlines the steps for setting up and configuring a Red Hat Enterprise Linux hosted Node.js web application, including infrastructure provisioning, identity management, SSL certification, storage solutions, and more.
 
+## Project Purpose
+
+This project is designed to leverage Red Hat Enterprise's robust, secure, and commercially viable environment for hosting a Node.js web application. The key objectives of the project include:
+
+- **Identity Management**: Setting up an Identity Management (IdM) provider using Kerberos and LDAP for secure authentication processes.
+- **SSL Certificate Management**: Managing SSL certificates to secure browser-to-web server communications, alongside X.509 certificates for authenticating identity server-to-client communications.
+- **PostgreSQL Backup Automation**: Automating PostgreSQL database backups with bash scripting and scheduling these backups with cron jobs to ensure data integrity and availability.
+- **ISCSI Storage**: Implementing ISCSI, a block storage solution using IP technology, to provide a high-availability and scalable storage solution suitable for data-intensive web applications, particularly when using AWS EBS.
+- **NGINX Web Server Proxy**: Utilizing NGINX for its ability to handle a large number of simultaneous connections, and configuring it as a reverse proxy to other web servers. This enhances the scalability, performance, resilience, and security of the web application.
+
+Through these components, the project aims to create a secure, reliable, and high-performance web application hosting environment that can serve as a solid foundation for both learning and practical application in a commercial setting.
+
+
 ## Infrastructure Setup
 
 ### AWS EC2 Red Hat Instances
