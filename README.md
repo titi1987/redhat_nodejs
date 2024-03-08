@@ -97,4 +97,3 @@ Through these components, the project aims to create a secure, reliable, and hig
 
 - **Log Verification**: Check cron job execution and status in the logs with `sudo grep -a CRON /var/log/syslog`.
 
-This guide provides a comprehensive walkthrough for setting up a Node.js web application on Red Hat Enterprise Linux, including all necessary components and configurations for a secure, scalable, and maintainable deployment.
